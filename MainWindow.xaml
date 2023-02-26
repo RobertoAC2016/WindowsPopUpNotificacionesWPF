@@ -1,0 +1,22 @@
+﻿<Window x:Class="Recordatorios.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Recordatorios"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500"
+        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <StackPanel
+        HorizontalAlignment="Center">
+        <Label Content="Buenvenido a la app para recordatorios de windows" FontSize="20"/>
+        <Label Content="Agregar texto del recordatorio" FontSize="20"/>
+        <TextBox Text="" FontSize="20" x:Name="txtmensaje"/>
+        <Label Content="Segundos para mostrar el recordatorio" FontSize="20"/>
+        <TextBox x:Name="tiempo" Text="" FontSize="20"/>
+        <Button Content="Agregar nuevo recordatorio" x:Name="MiEvento" Click="MiEvento_Click" FontSize="20"
+                Margin="50"/>
+        <Button Content="Ocultar" x:Name="Closer" FontSize="20" Margin="50,0,50,20" Click="Closer_Click"/>
+        <Label x:Name="lbltime" Content="" FontSize="20"/>
+    </StackPanel>
+</Window>
